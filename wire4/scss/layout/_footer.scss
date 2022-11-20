@@ -1,0 +1,25 @@
+.footer-inner{
+    
+    display:grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: repeat(2, minmax(50px, auto));
+    article{
+        width:100%;
+        text-align: center;
+    }
+    .f-site{
+        grid-column: 2 / 3;
+        grid-row:1 / span 2;
+        background: darkcyan;
+        border-left:3px dashed black;
+    }
+    .f-menu{
+        background: blanchedalmond;
+    }
+    .f-copy{
+        border-top:3px dashed black;
+        background:rebeccapurple;
+    }
+    
+
+}

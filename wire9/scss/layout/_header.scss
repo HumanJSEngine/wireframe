@@ -1,0 +1,46 @@
+.header{
+    grid-row:1/4;
+    grid-column:1;
+    background: beige;
+    .logo{
+        display:block;
+        background: silver;
+        height:100px;
+        text-align: center;
+        border-bottom:3px dotted black;
+    }
+    .nav{
+        .gnb{
+            width:90%;
+            margin:auto;
+            margin-top:10px;
+            &:hover > li:nth-child(1){
+                background:coral;
+            }
+            > li{
+                font-size: 1.3rem;
+                border:2px solid black;
+                padding:1.2rem 0;
+                text-align: center;
+                 &:hover{
+                    background: coral;
+                 }
+            }
+            
+            .submenu{
+        
+                font-size: 1rem;
+                border:2px solid black;
+                > li{
+                    padding:10px 0;
+                    text-align: center;
+                    &:hover{
+                        background:rgb(185, 123, 100);
+                    }
+                }
+            }
+        }
+    }
+
+
+}

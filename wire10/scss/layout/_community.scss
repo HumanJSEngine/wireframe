@@ -1,0 +1,14 @@
+.community{
+    background: rgb(176, 97, 240);
+    .community-inner{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:repeat(1, minmax(200px, auto));
+        text-align: center;
+        .notice, .banner{
+            border-right:3px dotted black;
+        }
+        
+    }
+
+}

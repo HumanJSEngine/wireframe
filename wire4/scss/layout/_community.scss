@@ -1,0 +1,6 @@
+.community-inner{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, minmax(200px, auto));
+    background: navajowhite;
+}

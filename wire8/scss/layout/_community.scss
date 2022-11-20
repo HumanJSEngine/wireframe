@@ -1,0 +1,14 @@
+.community{
+    position:relative;
+    .community-inner{
+        display:grid;
+        grid-template-columns: repeat(3, minmax(400px, auto));
+        grid-template-rows:repeat(1, minmax(200px, auto));
+        .notice, .gallery, .banner{
+            width:100%;
+            background:aliceblue;
+            border-right:2px dashed black;
+            text-align: center;
+        }
+    }
+}

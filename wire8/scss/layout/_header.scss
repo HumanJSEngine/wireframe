@@ -1,0 +1,67 @@
+.header{
+    position:absolute;
+    width:100vw;
+    left:0%;
+    background: cornflowerblue;
+    .header-inner{
+        position:relative;
+        width:1200px;
+        background:skyblue;
+        margin:auto;
+        .logo{
+            display:inline-block;
+            height:100px;
+            width:200px;
+            text-align: center;
+            background:rgb(176, 212, 226);
+        }
+        .nav{
+            position:absolute;
+            right:6%;
+            bottom:0%;
+            &:hover + .plusmenu{
+                display:block;
+            }
+            .gnb{
+                display:grid;
+                grid-template:repeat(1, minmax(50px, auto)) / repeat(4, 1fr); 
+                &:hover .submenu{
+                    display:block;
+                }
+                
+                > li{
+                    position:relative;
+                    padding:1.1rem 2.2rem;
+                    border:1px solid black;
+                    &:hover{background:salmon;}
+                    
+                    
+                    > a{
+                        font-size:1.2rem;
+                        }
+                    }
+                }
+                .submenu{
+                    position:absolute;
+                    display:none;
+                    top:50px;
+                    right:20px;
+                    z-index:10;
+                    > li{
+                        font-size: 1rem;
+                        padding: 6px 10px;
+                        &:hover{
+                            background:rgb(10, 2, 1);
+                        }
+                    }
+                    }
+                }
+        }
+        .plusmenu{
+            display:none;
+            position:absolute;
+            width:1200px;
+            height:150px;
+            background: salmon;
+        }
+    }

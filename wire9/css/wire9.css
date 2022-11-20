@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+body {
+  font-size: 1.3rem;
+  line-height: 1rem;
+  letter-spacing: 0;
+  font-weight: 550;
+  color: #000;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 350px 200px 100px;
+}
+
+.header {
+  grid-row: 1/4;
+  grid-column: 1;
+  background: beige;
+}
+.header .logo {
+  display: block;
+  background: silver;
+  height: 100px;
+  text-align: center;
+  border-bottom: 3px dotted black;
+}
+.header .nav .gnb {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+.header .nav .gnb:hover > li:nth-child(1) {
+  background: coral;
+}
+.header .nav .gnb > li {
+  font-size: 1.3rem;
+  border: 2px solid black;
+  padding: 1.2rem 0;
+  text-align: center;
+}
+.header .nav .gnb > li:hover {
+  background: coral;
+}
+.header .nav .gnb .submenu {
+  font-size: 1rem;
+  border: 2px solid black;
+}
+.header .nav .gnb .submenu > li {
+  padding: 10px 0;
+  text-align: center;
+}
+.header .nav .gnb .submenu > li:hover {
+  background: rgb(185, 123, 100);
+}
+
+.visual {
+  background: rgb(218, 160, 119);
+  text-align: center;
+}
+
+.community {
+  background: salmon;
+}
+.community .community-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, minmax(200px, auto));
+  text-align: center;
+}
+.community .community-inner .notice, .community .community-inner .banner {
+  border-right: 3px dotted black;
+}
+
+.footer .footer-inner {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: repeat(1, minmax(50px, auto));
+  text-align: center;
+}
+.footer .footer-inner .f-logo {
+  height: 100px;
+  grid-row: 1/span 2;
+  background: rgb(228, 197, 73);
+  border-right: 3px dotted black;
+}
+.footer .footer-inner .f-menu {
+  background: rgb(204, 119, 204);
+  border-bottom: 3px dotted black;
+}
+.footer .footer-inner .f-copy {
+  background: rgb(241, 214, 195);
+}

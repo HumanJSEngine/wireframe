@@ -1,0 +1,135 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: 0;
+  font-weight: 550;
+  color: #000;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  background: navajowhite;
+}
+.header .header-inner {
+  position: relative;
+  height: 100px;
+  width: 1200px;
+  background: rgb(245, 185, 75);
+}
+.header .header-inner .logo {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  background: darkturquoise;
+  border-right: 2px dotted black;
+}
+.header .header-inner .nav {
+  position: absolute;
+  bottom: 20%;
+  right: 3%;
+}
+.header .header-inner .nav .gnb {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+}
+.header .header-inner .nav .gnb > li {
+  border: 1px solid black;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+.header .header-inner .nav .gnb > li:hover {
+  background: steelblue;
+}
+.header .header-inner .nav .gnb > li:hover > .submenu {
+  display: block;
+}
+.header .header-inner .nav .gnb > li > .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+.header .header-inner .nav .gnb > li > .submenu > li {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem 2.4rem;
+  border: 1px solid black;
+}
+.header .header-inner .nav .gnb > li > .submenu > li:hover {
+  background: rgb(108, 185, 248);
+}
+
+.visual-inner {
+  height: 300px;
+  background: darkcyan;
+}
+
+.community-inner {
+  display: flex;
+}
+.community-inner article {
+  flex: 1;
+  height: 200px;
+  background-color: aquamarine;
+  text-align: center;
+}
+.community-inner .notice, .community-inner .gallery {
+  border-right: 2px dotted black;
+}
+
+.footer {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  background: navajowhite;
+}
+.footer .footer-inner {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: repeat(1, minmax(100px, auto));
+}
+.footer .footer-inner a, .footer .footer-inner .f-copy, .footer .footer-inner .f-sns {
+  width: 100%;
+  text-align: center;
+}
+.footer .footer-inner .f-sns {
+  background: cornsilk;
+}
+.footer .footer-inner .f-copy {
+  background: rgb(243, 220, 130);
+  border-right: 2px dotted black;
+}
+.footer .footer-inner .f-logo {
+  background: cornsilk;
+  border-right: 2px dotted black;
+}

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+body {
+  font-size: 1.3rem;
+  line-height: 1rem;
+  letter-spacing: 0;
+  font-weight: 550;
+  color: #000;
+}
+
+
+
+.wrapper{
+    max-width:1200px;
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows:350px 200px 100px;
+}
+
+@import 'header';
+
+@import 'visual';
+
+@import 'community';
+
+@import 'footer';

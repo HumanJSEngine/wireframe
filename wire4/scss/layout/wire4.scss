@@ -1,0 +1,44 @@
+@charset 'utf-8';
+
+*{
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+}
+
+ul, li{
+    list-style: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    letter-spacing: 0;
+    font-weight: 450;
+  }
+
+.wrapper{
+    max-width: 1200px;
+    width:100%;
+}
+
+
+
+
+
+@import "header";
+
+@import "visual";
+
+@import "community";
+
+@import "footer";

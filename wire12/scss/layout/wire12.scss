@@ -1,0 +1,90 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+body {
+    font-size: 1.3rem;
+    line-height: 1rem;
+    letter-spacing: 0;
+    font-weight: 550;
+    color: #000;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 1000px;
+    background:rgb(189, 157, 157);
+}
+
+
+@import 'header';
+
+
+.items {
+    display: flex;
+    flex-direction: column;
+
+    .visual {
+        flex-basis: 350px;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(224, 212, 35);
+    }
+
+    .community-inner {
+        display: flex;
+        flex-direction: row;
+        background: rgb(192, 238, 108);
+        .notice,
+        .gallery,
+        .banner {
+            /* flex-grow: 1; flex-shrink: 1; flex-basis: 0%; */
+            flex: 1;
+            height: 200px;
+            /*글자 가운데 정렬*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 3px dotted black;
+        }
+    }
+    .footer-inner {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows:repeat(1, minmax(100px, auto));
+        text-align: center;
+        .f-logo{
+            background:rgb(146, 146, 209);
+            border-right:3px dashed black;
+        }
+        .f-copyright{
+            background: sienna;
+            border-right:3px dashed black;
+        }
+        .f-site{
+            background: rgb(160, 200, 235);
+        }
+        }
+    }
+
